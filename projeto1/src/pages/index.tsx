@@ -17,13 +17,25 @@ function Topo(){
     </div>
   )
 }
+
 export default function Home() {
-  return (
-    <div>
+    return (
+      <div>
       <Topo/>
-      <div>Curso de react Next</div>
-      <div>Typescript</div>
-      <div>React</div>
+      <div style={testecss}>
+        <div>Curso de react Next</div>
+        <div>Typescript</div>
+        <div style={{color:'#f00', backgroundColor:'#bbb'}}>React</div>
+      </div>
     </div>
   );
+}
+
+const testecss={
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  color: '#00f',
+  backgroundColor: '#eee',
+  fontSize: '20px'
 }
