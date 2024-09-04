@@ -72,7 +72,10 @@ export default function produtosPagina(){
                 if(e.disponivel)
                 return(
                     // eslint-disable-next-line react/jsx-key
-                    <Card key ={e.id} produto={e.produto} valor={e.valor} desconto={e.desconto} funcao={calcDesc} />
+                    <Card key ={e.id} produto={e.produto} valor={e.valor} desconto={e.desconto} funcao={calcDesc}>
+                        <div>Curso de React Next</div>
+                        <div>Zaori</div>
+                    </Card> 
                 )
             })
             }
